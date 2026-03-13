@@ -10,7 +10,7 @@ const Home = () => {
           <div className="absolute top-0 right-0 w-1/2 h-full bg-linear-to-l from-white/30 to-transparent"></div>
           <div
             className="w-full h-full bg-cover bg-center"
-            style={{ backgroundImage: "url('/banner/hero-banner.png')" }}
+            style={{ backgroundImage: "url('/banner/hero.png')" }}
           ></div>
           <div className="absolute inset-0 bg-white/15"></div>
         </div>
