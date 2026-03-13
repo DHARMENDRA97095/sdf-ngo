@@ -44,7 +44,7 @@ const About = () => {
       question: "Are my donations tax-deductible?",
       answer: "Yes, all donations made to the foundation are eligible for 50% tax exemption under Section 80G of the Income Tax Act."
     }
-  ]; 
+  ];
 
   return (
     <div className="bg-bg-color min-h-screen">
@@ -166,7 +166,7 @@ const About = () => {
           </div>
 
           {/* Partners */}
-          <div id="partners" className="scroll-mt-24">
+          <div id="partners" className="scroll-mt-24 max-h-105">
             <h2 className="text-3xl font-serif text-text-primary mb-6">Partners & Affiliations</h2>
             <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-8 h-full flex flex-col justify-center">
                <p className="text-gray-600 mb-8 text-center">We collaborate with a diverse network of organizations to amplify our impact.</p>
@@ -177,6 +177,7 @@ const About = () => {
                   </div>
                   <div className="p-4 bg-gray-50 rounded-lg">
                     <div className="font-bold text-primary mb-1">Public</div>
+                    <div className="text-sm text-gray-500">NGO & Academic Partners</div>
                   </div>
                   <div className="p-4 bg-gray-50 rounded-lg col-span-2">
                     <div className="font-bold text-primary mb-1">Civil Society</div>
@@ -187,8 +188,9 @@ const About = () => {
           </div>
         </div>
       </section>
+
       {/* FAQ Section */}
-      <section className="py-24 bg-white">
+      <section id="fAq" className="py-24 bg-white" >
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-serif text-text-primary mb-4">Frequently Asked Questions</h2>
@@ -198,9 +200,9 @@ const About = () => {
           <div className="space-y-4">
             {faqs.map((faq, index) => (
               <div 
-                key={index} 
+                key={index}
                 className={`border rounded-xl overflow-hidden transition-all duration-300 ${openFaq === index ? 'border-primary shadow-md' : 'border-gray-200 hover:border-primary/50'}`}
-              >
+               >
                 <button 
                   className="w-full text-left px-6 py-5 flex justify-between items-center focus:outline-none bg-white"
                   onClick={() => toggleFaq(index)}
@@ -212,7 +214,7 @@ const About = () => {
                 </button>
                 <div 
                   className={`px-6 overflow-hidden transition-all duration-300 ease-in-out bg-bg-color ${openFaq === index ? 'max-h-48 py-5 opacity-100' : 'max-h-0 py-0 opacity-0'}`}
-                >
+                 >
                   <p className="text-gray-700">{faq.answer}</p>
                 </div>
               </div>

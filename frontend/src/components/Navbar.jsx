@@ -1,5 +1,5 @@
-import { Link } from "react-router-dom";
-import { useState } from "react";
+import { Link } from 'react-router-dom';
+import { useState } from 'react';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -9,83 +9,76 @@ const Navbar = () => {
     setActiveMobileMenu(activeMobileMenu === menu ? null : menu);
   };
 
+
+
+
+
   const menuItems = [
     {
-      name: "About Us",
-      path: "/about",
+      name: 'About',
+      path: '/about',
       hasDropdown: true,
       dropdownItems: [
-        { label: "Who We Are", path: "/about#who-we-are", icon: "💡" },
-        { label: "Leadership", path: "/about#leadership", icon: "👥" },
-        { label: "Our Approach", path: "/about#approach", icon: "🎯" },
-        { label: "Partners", path: "/about#partners", icon: "🤝" },
+        { label: 'Who We Are', path: '/about#who-we-are', icon: '💡' },
+        { label: 'Leadership', path: '/about#leadership', icon: '👥' },
+        { label: 'Our Approach', path: '/about#approach', icon: '🎯' },
+        { label: 'Partners', path: '/about#partners', icon: '🤝' },
+        { label: 'FAQ', path: '/about#fAq', icon: '🙋' },
       ],
     },
     {
-      name: "Programs",
+      name: 'Programs',
       path: '/programs',
       hasDropdown: true,
       dropdownItems: [
-        { label: "Health & Nutrition", path: "/programs#health", icon: "🏥" },
-        { label: "Education", path: "/programs#education", icon: "📚" },
-        { label: "Livelihoods", path: "/programs#livelihoods", icon: "💼" },
-        { label: "Women Empowerment", path: "/programs#women", icon: "👩🏽‍🎓" },
-        { label: "Agriculture", path: "/programs#agriculture", icon: "🌾" },
-        {
-          label: "Environment & WASH",
-          path: "/programs#environment",
-          icon: "🚰",
-        },
+        { label: 'Health & Nutrition', path: '/programs#health', icon: '🏥' },
+        { label: 'Education', path: '/programs#education', icon: '📚' },
+        { label: 'Livelihoods', path: '/programs#livelihoods', icon: '💼' },
+        { label: 'Women Empowerment', path: '/programs#women', icon: '👩🏽‍🎓' },
+        { label: 'Agriculture', path: '/programs#agriculture', icon: '🌾' },
+        { label: 'Environment & WASH', path: '/programs#environment', icon: '🚰' },
       ],
     },
     {
-      name: "Our Work",
-      // path: '/projects',
+      name: 'Our Work',
+      path: '/projects',
       hasDropdown: true,
       dropdownItems: [
-        { label: "Ongoing Projects", path: "/projects#ongoing", icon: "🏢" },
-        {
-          label: "State-wise Listings",
-          path: "/projects#listings",
-          icon: "🗺️",
-        },
-        { label: "Impact Snapshot", path: "/projects#impact", icon: "📊" },
+        { label: 'Ongoing Projects', path: '/projects#ongoing', icon: '🏢' },
+        { label: 'State-wise Listings', path: '/projects#listings', icon: '🗺️' },
+        { label: 'Impact Snapshot', path: '/projects#impact', icon: '📊' },
       ],
     },
     {
-      name: "Publications",
-      path: "/publications",
+      name: 'Publications',
+      path: '/publications',
       hasDropdown: true,
       dropdownItems: [
-        {
-          label: "Annual Reports",
-          path: "/publications#annual-reports",
-          icon: "📊",
-        },
-        {
-          label: "Case Studies",
-          path: "/publications#case-studies",
-          icon: "📝",
-        },
-        {
-          label: "Photo Galleries",
-          path: "/publications#galleries",
-          icon: "🖼️",
-        },
+        { label: 'Annual Reports', path: '/publications#annual-reports', icon: '📈' },
+        { label: 'Case Studies', path: '/publications#case-studies', icon: '📝' },
+        { label: 'Photo Galleries', path: '/publications#galleries', icon: '🖼️' },
       ],
-    },  
+    },
     {
-      name: "Get Involved",
-      path: "/get-involved",
+      name: 'Media & Stories',
+      path: '/media',
       hasDropdown: true,
       dropdownItems: [
-        {
-          label: "Volunteer With Us",
-          path: "/get-involved#volunteer",
-          icon: "🤝",
-        },
-        { label: "Careers", path: "/get-involved#careers", icon: "💼" },
-        { label: "Contact Us", path: "/contact", icon: "📞" },
+        { label: 'News & Updates', path: '/media#news', icon: '📰' },
+        { label: 'Photo Gallery', path: '/media#photos', icon: '📸' },
+        { label: 'Video Gallery', path: '/media#videos', icon: '🎥' },
+        { label: 'Press Coverage', path: '/media#press', icon: '🗞️' },
+      ],
+    },
+    {
+      
+      name: 'Get Involved',
+      path: '/get-involved',
+      hasDropdown: true,
+      dropdownItems: [
+        { label: 'Volunteer With Us', path: '/get-involved#volunteer', icon: '🤝' },
+        { label: 'Careers', path: '/get-involved#careers', icon: '💼' },
+        { label: 'Contact Us', path: '/contact', icon: '📞' },
       ],
     },
   ];
@@ -98,9 +91,9 @@ const Navbar = () => {
           <div className="flex items-center">
             <Link to="/" className="flex items-center gap-2">
               <div className=" p-2 rounded-full flex items-center justify-center size-60">
-                <img src="logo/logo.png" alt="" srcset="" />
+                <img src="/public/logo/logo-bg.png" alt="" srcset="" />
               </div>
-              <div className="flex flex-col ml-1"></div>
+
             </Link>
           </div>
 
@@ -113,11 +106,7 @@ const Navbar = () => {
                   className="text-text-primary hover:text-primary font-bold text-sm transition-colors flex items-center gap-1"
                 >
                   {item.name}
-                  {item.hasDropdown && (
-                    <span className="text-xs text-gray-400 group-hover:rotate-180 transition-transform">
-                      ▼
-                    </span>
-                  )}
+                  {item.hasDropdown && <span className="text-xs text-gray-400 group-hover:rotate-180 transition-transform">▼</span>}
                 </Link>
 
                 {/* Dropdown Content */}
@@ -130,12 +119,8 @@ const Navbar = () => {
                           to={subItem.path}
                           className="flex items-center gap-3 px-4 py-3 hover:bg-bg-color rounded-lg transition-colors group/link"
                         >
-                          <span className="text-xl group-hover/link:scale-110 transition-transform">
-                            {subItem.icon}
-                          </span>
-                          <span className="text-sm font-bold text-gray-700 group-hover/link:text-primary">
-                            {subItem.label}
-                          </span>
+                          <span className="text-xl group-hover/link:scale-110 transition-transform">{subItem.icon}</span>
+                          <span className="text-sm font-bold text-gray-700 group-hover/link:text-primary">{subItem.label}</span>
                         </Link>
                       ))}
                     </div>
@@ -159,26 +144,17 @@ const Navbar = () => {
               onClick={() => setIsOpen(!isOpen)}
               className="text-text-primary hover:text-primary p-2 focus:outline-none"
             >
-              {isOpen ? (
-                <span className="text-2xl font-bold">✕</span>
-              ) : (
-                <span className="text-2xl font-bold">☰</span>
-              )}
+              {isOpen ? <span className="text-2xl font-bold">✕</span> : <span className="text-2xl font-bold">☰</span>}
             </button>
           </div>
         </div>
       </div>
 
       {/* Mobile Navigation (Accordion) */}
-      <div
-        className={`lg:hidden transition-all duration-300 ease-in-out overflow-hidden ${isOpen ? "max-h-screen border-t border-gray-100" : "max-h-0"}`}
-      >
+      <div className={`lg:hidden transition-all duration-300 ease-in-out overflow-hidden ${isOpen ? 'max-h-screen border-t border-gray-100' : 'max-h-0'}`}>
         <div className="px-4 pt-2 pb-6 space-y-1 bg-white shadow-inner max-h-[calc(100vh-80px)] overflow-y-auto">
           {menuItems.map((item) => (
-            <div
-              key={item.name}
-              className="border-b border-gray-50 last:border-0"
-            >
+            <div key={item.name} className="border-b border-gray-50 last:border-0">
               {item.hasDropdown ? (
                 <>
                   <button
@@ -186,15 +162,9 @@ const Navbar = () => {
                     className="w-full flex items-center justify-between px-3 py-4 text-base font-bold text-text-primary focus:outline-none"
                   >
                     {item.name}
-                    <span
-                      className={`text-sm text-gray-400 transition-transform ${activeMobileMenu === item.name ? "rotate-180 text-primary" : ""}`}
-                    >
-                      ▼
-                    </span>
+                    <span className={`text-sm text-gray-400 transition-transform ${activeMobileMenu === item.name ? 'rotate-180 text-primary' : ''}`}>▼</span>
                   </button>
-                  <div
-                    className={`overflow-hidden transition-all duration-300 ease-in-out bg-bg-color/50 rounded-lg ${activeMobileMenu === item.name ? "max-h-96 mb-2 opacity-100" : "max-h-0 opacity-0"}`}
-                  >
+                  <div className={`overflow-hidden transition-all duration-300 ease-in-out bg-bg-color/50 rounded-lg ${activeMobileMenu === item.name ? 'max-h-96 mb-2 opacity-100' : 'max-h-0 opacity-0'}`}>
                     {item.dropdownItems.map((subItem) => (
                       <Link
                         key={subItem.label}
@@ -202,8 +172,7 @@ const Navbar = () => {
                         className="flex items-center gap-3 px-6 py-3 text-sm font-medium text-gray-600 hover:text-primary hover:bg-white transition-colors"
                         onClick={() => setIsOpen(false)}
                       >
-                        <span className="text-lg">{subItem.icon}</span>{" "}
-                        {subItem.label}
+                        <span className="text-lg">{subItem.icon}</span> {subItem.label}
                       </Link>
                     ))}
                   </div>

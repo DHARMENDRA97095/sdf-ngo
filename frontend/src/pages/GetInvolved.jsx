@@ -1,4 +1,23 @@
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
+
+
 const GetInvolved = () => {
+
+  
+  const location = useLocation(); // 2. Define location here
+
+  useEffect(() => {
+    if (location.hash) {
+      const el = document.querySelector(location.hash);
+      if (el) {
+        setTimeout(() => {
+          el.scrollIntoView({ behavior: "smooth" });
+        }, 100);
+      }
+    }
+  }, [location]);
+
   return (
     <div className="bg-bg-color min-h-screen pb-24">
       <section className="bg-secondary text-white py-20">
@@ -6,7 +25,7 @@ const GetInvolved = () => {
           <h1 className="text-4xl md:text-5xl font-serif font-bold mb-4">Get Involved</h1>
           <p className="text-xl max-w-2xl mx-auto">Be a part of our movement. There are many ways to contribute your time, skills, and passion.</p>
         </div>
-      </section>
+     </section>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         
@@ -15,7 +34,7 @@ const GetInvolved = () => {
            <div className="flex flex-col md:flex-row gap-12 items-center">
              <div className="w-full md:w-1/2 rounded-2xl overflow-hidden shadow-sm h-96 relative">
                <img src="about/vol.png" alt="Volunteer" className="w-full h-full object-cover" />
-               <div className="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent flex items-end p-8">
+               <div className="absolute inset-0 bg-linear-to-t from-primary/80 to-transparent flex items-end p-8">
                  <h2 className="text-4xl text-white font-serif font-bold tracking-wide">Volunteer With Us</h2>
                </div>
              </div>

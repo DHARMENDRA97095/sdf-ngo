@@ -2,11 +2,11 @@ const Donate = () => {
   return (
     <div className="bg-bg-color min-h-screen pb-24">
       {/* Hero */}
-      <section className="bg-accent text-white py-20 relative overflow-hidden">
-        <div className="absolute inset-0 opacity-10 blur-sm">
-           <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?q=80&w=1200&auto=format&fit=crop" className="w-full h-full object-cover" alt="Background" />
+      <section className="bg-accent text-white py-20 relative overflow-hidden h-100">
+        <div className="absolute inset-0  opacity-60">
+           <img src="/public/banner/donate-page.png" className="w-full h-full object-cover" alt="Background" />
         </div>
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white mt-8">
           <h1 className="text-4xl md:text-5xl font-serif font-bold mb-6">Invest in Sustainable Change</h1>
           <p className="text-xl max-w-2xl mx-auto text-blue-50">Your donation directly empowers marginalized communities. Together, we can build a thriving, equitable future.</p>
         </div>

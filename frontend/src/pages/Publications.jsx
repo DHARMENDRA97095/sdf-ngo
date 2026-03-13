@@ -1,11 +1,12 @@
-
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
-
 const Publications = () => {
 
-  const location = useLocation();
+
+
+   const location = useLocation(); // 2. Define location here
+
   useEffect(() => {
     if (location.hash) {
       const el = document.querySelector(location.hash);
@@ -16,8 +17,6 @@ const Publications = () => {
       }
     }
   }, [location]);
-
-  
   return (
     <div className="bg-bg-color min-h-screen">
       <section className="bg-primary text-white py-20">
