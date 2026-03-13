@@ -97,14 +97,14 @@ const Programs = () => {
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
               </div>
-              <div className="p-8 relative flex-grow flex flex-col">
+              <div className="p-8 relative grow flex flex-col">
                 <div className="absolute -top-10 right-6 w-20 h-20 bg-white rounded-full flex items-center justify-center text-4xl shadow-xl border border-gray-50 hover:scale-110 transition-transform duration-300">
                   {program.icon}
                 </div>
                 <h3 className="text-2xl font-serif font-bold text-text-primary mb-4 mt-4 leading-tight">
                   {program.title}
                 </h3>
-                <p className="text-gray-600 mb-6 flex-grow">{program.desc}</p>
+                <p className="text-gray-600 mb-6 grow">{program.desc}</p>
                 <div className="flex items-center gap-2 mt-auto pt-4 border-t border-gray-100">
                   <span className="bg-[#E9EFE1] text-primary text-xs font-bold px-3 py-1 rounded-full">
                     {program.stats.beneficiaries} Beneficiaries
