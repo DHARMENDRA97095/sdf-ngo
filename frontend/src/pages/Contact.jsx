@@ -61,8 +61,13 @@ const Contact = () => {
             </div>
 
             {/* Verification Google Maps Placeholder */}
-            <div className="w-full h-48 bg-gray-200 rounded-xl overflow-hidden shadow-inner border border-gray-300 relative flex items-center justify-center">
-               <span className="text-gray-500 font-medium">Google Maps Embed Placeholder</span>
+            <div className="w-full h-48 bg-gray-200 rounded-xl overflow-hidden shadow-inner border border-gray-300 relative">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3503.539593014628!2d77.315106!3d28.583585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce51ee5d79db7%3A0x685544a078523ffb!2sHRN%20Tech%20Solutions!5e0!3m2!1sen!2sin!4v1756100513176!5m2!1sen!2sin"
+                width="100%"
+                height="100%"
+                
+              ></iframe>
             </div>
           </div>
 
