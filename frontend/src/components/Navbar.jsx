@@ -91,7 +91,7 @@ const Navbar = () => {
           <div className="flex items-center">
             <Link to="/" className="flex items-center gap-2">
               <div className=" p-2 rounded-full flex items-center justify-center size-60">
-                <img src="/public/logo/logo-bg.png" alt="" srcset="" />
+                <img src="logo/logo-bg.png" alt="" srcset="" />
               </div>
 
             </Link>
