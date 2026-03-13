@@ -5,14 +5,17 @@ const Home = () => {
   return (
     <div>
       {/* Hero Section */}
+      <section className="relative bg-[#F9F6EA] overflow-hidden pt-12 pb-24 md:pt-20 md:pb-32">
+        <div className="absolute inset-0 z-0">
+          <div className="absolute top-0 right-0 w-1/2 h-full bg-linear-to-l from-white/30 to-transparent"></div>
       <section className="relative bg-[#F9F6EA]/20 overflow-hidden pt-12 pb-24 md:pt-20 md:pb-32">
         <div className="absolute inset-0 z-0 opacity-40">
           <div className="absolute top-0 right-0 w-1/2 h-full bg-linear-to-l from-white/0 to-transparent"></div>
           <div
             className="w-full h-full bg-cover bg-center"
-            style={{ backgroundImage: "url('/banner/hero-banner.png')" }}
+            style={{ backgroundImage: "url('/banner/hero.png')" }}
           ></div>
-          <div className="absolute inset-0 bg-white/25"></div>
+          <div className="absolute inset-0 bg-white/15"></div>
         </div>
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

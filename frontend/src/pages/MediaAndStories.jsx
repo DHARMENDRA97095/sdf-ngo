@@ -96,7 +96,7 @@ const [activeTab, setActiveTab] = useState('news');
         tag: "The Daily Chronicle",
         datee: "Sep 15, 2023",
         title: "NGO Recognized for Exemplary Work in Sustainable Development",
-        image: "/public/gallery/1.png",
+        image: "gallery/1.png",
         para: "An independent review highlights the outstanding contributions made by the foundation in improving rural livelihood standards across 5 states, setting a benchmark for community-led initiatives..."
     },
     {
@@ -104,7 +104,7 @@ const [activeTab, setActiveTab] = useState('news');
         tag: "The Daily Chronicle",
         datee: "Sep 15, 2023",
         title: "NGO Recognized for Exemplary Work in Sustainable Development",
-        image: "/public/gallery/2.png",
+        image: "gallery/2.png",
         para: "An independent review highlights the outstanding contributions made by the foundation in improving rural livelihood standards across 5 states, setting a benchmark for community-led initiatives..."
     },
   ]
