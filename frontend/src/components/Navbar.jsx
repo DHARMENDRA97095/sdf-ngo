@@ -71,6 +71,7 @@ const Navbar = () => {
       ],
     },
     {
+      
       name: 'Get Involved',
       path: '/get-involved',
       hasDropdown: true,
