@@ -8,9 +8,7 @@ const Home = () => {
       <section className="relative bg-[#F9F6EA] overflow-hidden pt-12 pb-24 md:pt-20 md:pb-32">
         <div className="absolute inset-0 z-0">
           <div className="absolute top-0 right-0 w-1/2 h-full bg-linear-to-l from-white/30 to-transparent"></div>
-      <section className="relative bg-[#F9F6EA]/20 overflow-hidden pt-12 pb-24 md:pt-20 md:pb-32">
-        <div className="absolute inset-0 z-0 opacity-40">
-          <div className="absolute top-0 right-0 w-1/2 h-full bg-linear-to-l from-white/0 to-transparent"></div>
+     
           <div
             className="w-full h-full bg-cover bg-center"
             style={{ backgroundImage: "url('/banner/hero.png')" }}
